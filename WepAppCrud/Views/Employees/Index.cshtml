@@ -1,0 +1,79 @@
+﻿@model IEnumerable<WepAppCrud.Employee>
+
+@{
+    ViewData["Title"] = "Admin View";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.EmployeeId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmployeeName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImageUser)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BirthDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Salary)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HiringDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NationalId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.department.DepartmentName)
+            </th>
+            <th>Events</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmployeeId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmployeeName)
+            </td>
+            <td>
+                <img src="photos/@item.ImageUser" style="width: 35px ; height: 35px "/>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BirthDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Salary)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HiringDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NationalId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.department.DepartmentName)
+            </td>
+            
+            <td>
+             
+                @Html.ActionLink("Edit", "Edit", new {  id=item.EmployeeId }) |
+                @Html.ActionLink("Delete", "Delete", new {  id=item.EmployeeId },
+                new{onclick = "return confirm('Are u sure u want to delete this user ?')  "})
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

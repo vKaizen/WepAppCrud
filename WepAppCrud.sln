@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WepAppCrud", "WepAppCrud\WepAppCrud.csproj", "{9DD08F8E-23E5-4471-983A-038872AC476D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9DD08F8E-23E5-4471-983A-038872AC476D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DD08F8E-23E5-4471-983A-038872AC476D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DD08F8E-23E5-4471-983A-038872AC476D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DD08F8E-23E5-4471-983A-038872AC476D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F37C7F20-78F3-4146-97EC-A658BC8ADCF7}
+	EndGlobalSection
+EndGlobal
